@@ -1,0 +1,7 @@
+proc /proc proc defaults 0 0
+/dev/md/0 none swap sw 0 0
+/dev/md/1 /boot ext3 defaults 0 0
+/dev/md/2 / ext4 defaults 0 0
+# 2021-09-02 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# "Setup the instance store": https://github.com/dxmoto/54.93.211.238/issues/1
+UUID=55d295e1-837b-4116-a213-d1c0f3bb94de  /L  ext4  defaults,nofail  0  2

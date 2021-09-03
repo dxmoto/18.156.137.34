@@ -3,5 +3,8 @@ proc /proc proc defaults 0 0
 /dev/md/1 /boot ext3 defaults 0 0
 /dev/md/2 / ext4 defaults 0 0
 # 2021-09-02 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
-# "Setup the instance store": https://github.com/dxmoto/54.93.211.238/issues/1
+# "Setup the instance store": https://github.com/dxmoto/18.156.137.34/issues/1
 UUID=df1aa461-e5ce-408e-8cb7-25eab8fc4e92  /L  ext4  defaults,nofail  0  2
+# 2021-09-02 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# "Setup a swap file": https://github.com/dxmoto/18.156.137.34/issues/2
+/L/swap none swap sw 0 0

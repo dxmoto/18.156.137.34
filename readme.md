@@ -1,1 +1,1 @@
-The server's settings for [dxmoto.com](https://dxmoto.com) (18.156.137.34, Magento 2).
+The server's settings for [dxmoto.com](https://dxmoto.com) (18.184.94.186, Magento 2).

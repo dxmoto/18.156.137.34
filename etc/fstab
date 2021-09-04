@@ -1,10 +1,6 @@
-proc /proc proc defaults 0 0
-/dev/md/0 none swap sw 0 0
-/dev/md/1 /boot ext3 defaults 0 0
-/dev/md/2 / ext4 defaults 0 0
-# 2021-09-02 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
-# "Setup the instance store": https://github.com/dxmoto/18.156.137.34/issues/1
-UUID=df1aa461-e5ce-408e-8cb7-25eab8fc4e92  /L  ext4  defaults,nofail  0  2
-# 2021-09-02 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
-# "Setup a swap file": https://github.com/dxmoto/18.156.137.34/issues/2
-/L/swap none swap sw 0 0
+# /etc/fstab: static file system information
+UUID=5db68868-2d70-449f-8b1d-f3c769ec01c7 / ext4 rw,discard,errors=remount-ro,x-systemd.growfs 0 1
+UUID=72C9-F191 /boot/efi vfat defaults 0 0
+# 2021-09-04 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+# "Setup the instance store": https://github.com/dxmoto/18.184.94.186/issues/1
+UUID=bec9f35e-597a-4a7e-8634-65c697ef1cc6  /L  ext4  defaults,nofail  0  2
